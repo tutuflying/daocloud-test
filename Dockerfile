@@ -12,6 +12,3 @@ COPY ./package.json /app/
 COPY ./bower.json /app/
 RUN bower install --allow-root
 RUN service nginx start
-
-
-CMD ["/usr/bin/supervisord"]
