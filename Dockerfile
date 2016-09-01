@@ -1,4 +1,4 @@
-FROM daocloud.io/library/ubuntu
+FROM daocloud.io/library/node
 MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
 
