@@ -1,7 +1,7 @@
 version: "2.0"
 
 build:
-  image: daocloud.io/tutuflyingzhao/test:master-2a61e28
+  image: 
     dockerfile_path: Dockerfile
     build_dir: /
     cache: false
