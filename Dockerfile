@@ -1,12 +1,11 @@
-FROM daocloud.io/library/nginx
+FROM daocloud.io/library/ubuntu
 MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
 RUN apt-get update
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nginx nodejs npm
 
 RUN npm install bower -g
 
-RUN mkdir -p /var/www
 WORKDIR /var/www
 COPY ./package.json /var/www/
 COPY ./bower.json /var/www/
