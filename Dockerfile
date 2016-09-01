@@ -2,7 +2,7 @@ FROM daocloud.io/library/ubuntu
 MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
 RUN apt-get update
-RUN apt-get install -y nginx nodejs npm
+RUN apt-get install -y nginx nodejs npm git
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN npm install bower -g
