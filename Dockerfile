@@ -1,4 +1,4 @@
-FROM daocloud.io/library/node
+FROM daocloud.io/library/nginx
 MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
 
