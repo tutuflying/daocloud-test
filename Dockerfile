@@ -1,6 +1,8 @@
 FROM daocloud.io/tutuflyingzhao/test:master-2a61e28
 MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
+RUN apt-get update
+RUN npm install bower -g
 RUN npm install bower -g
 
 RUN mkdir -p /app
