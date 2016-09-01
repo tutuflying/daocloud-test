@@ -7,3 +7,5 @@ WORKDIR /app
 COPY ./package.json /app/
 COPY ./bower.json /app/
 RUN bower install --allow-root
+
+CMD ["/usr/bin/supervisord"]
