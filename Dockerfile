@@ -6,9 +6,9 @@ RUN apt-get install -y nodejs npm
 
 RUN npm install bower -g
 
-RUN mkdir -p /app
-WORKDIR /app
-COPY ./package.json /app/
-COPY ./bower.json /app/
+RUN mkdir -p /var/www
+WORKDIR /var/www
+COPY ./package.json /var/www/
+COPY ./bower.json /var/www/
 RUN bower install --allow-root
 RUN service nginx start
