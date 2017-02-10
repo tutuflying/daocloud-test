@@ -4,4 +4,4 @@ build:
   image: 
     dockerfile_path: Dockerfile
     build_dir: /
-    cache: false
+    cache: true
