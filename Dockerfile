@@ -8,7 +8,7 @@ RUN apk update
 # RUN wget --no-check-certificate https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 # RUN dpkg -i --force-depends google-chrome-stable_current_amd64.deb
 
-RUN apk add --no-cache xdg-utils \
+RUN apk add xdg-utils \
                        chromium-browser \
                        xvfb \
                        x11-xkb-utils \
