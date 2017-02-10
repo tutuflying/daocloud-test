@@ -1,5 +1,5 @@
 FROM ubuntu:trusty-20170119
 MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
-RUN cd /tmp
+WORKDIR /tmp
 RUN ls -a
