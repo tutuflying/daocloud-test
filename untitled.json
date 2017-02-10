@@ -1,0 +1,40 @@
+{
+    "my_work": [{
+        "key": "stockin",
+        "value": "入库订单",
+        "link": "desktop/stockin",
+        "icon": "fa-gift",
+        "rights": "not_allowed",
+        "toggle": false,
+        "submenu": [{
+            "key": "stockin_group",
+            "value": "汇总入库",
+            "link": "desktop/stockin_group",
+            "icon": null,
+            "rights": "not_allowed"
+        }]
+    }],
+    "my_warehouse": [{
+        "key": "owners",
+        "value": "货主",
+        "link": "setting/owners/list",
+        "icon": "fa-gift",
+        "rights": "not_allowed",
+        "toggle": false,
+        "submenu": null
+    }, {
+        "key": "tools",
+        "value": "工具",
+        "link": null,
+        "icon": "fa-gift",
+        "rights": "not_allowed",
+        "toggle": true,
+        "submenu": [{
+            "key": "inventorys_flow",
+            "value": "库位库存流水查询",
+            "link": "setting/inventorys/list",
+            "icon": "fa-gift",
+            "rights": "not_allowed"
+        }]
+    }]
+}
