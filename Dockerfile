@@ -5,10 +5,9 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apk update
 RUN apk add --no-cache wget
 
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apk-key add - 
-RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apk/sources.list.d/google.list'
-
-RUN apk update
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN dpkg -i --force-depends google-chrome-stable_current_amd64.deb
+RUN apk add -f
 
 RUN apk add --no-cache xdg-utils \
                        google-chrome-stable \
