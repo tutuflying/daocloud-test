@@ -1,9 +1,5 @@
 FROM ubuntu:trusty-20170119
 MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
-RUN cd ..
-RUN ls -a
-RUN mkdir -p /app
-RUN cp -rf .dockerenv /app/.dockerenv
-RUN cd /app
+RUN cd /tmp
 RUN ls -a
