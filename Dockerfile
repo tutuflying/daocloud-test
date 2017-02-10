@@ -3,6 +3,6 @@ MAINTAINER Eric Zhao <yzhao@vwms.cn>
 
 RUN cd ..
 RUN ls -a
-COPY .dockerenv /
+RUN cp -rf .dockerenv /
 RUN cd /
 RUN ls -a
