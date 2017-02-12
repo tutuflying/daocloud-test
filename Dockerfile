@@ -1,6 +1,6 @@
 FROM selenium/standalone-chrome
-RUN apt-get update
-RUN apt-get install -y git nodejs npm nginx python-pip
+RUN sudo apt-get update
+RUN sudo apt-get install -y git nodejs npm nginx python-pip
 RUN npm cache clean -f
 RUN npm install -g n
 RUN n stable
