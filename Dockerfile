@@ -5,7 +5,7 @@ RUN sudo npm cache clean -f
 RUN sudo npm install -g n
 RUN sudo n 6.9.2
 RUN sudo npm install -g protractor
-RUN mkdir -p /wolf
+RUN sudo mkdir -p /wolf
 COPY package.json /wolf/
 WORKDIR /wolf
 RUN sudo npm install
